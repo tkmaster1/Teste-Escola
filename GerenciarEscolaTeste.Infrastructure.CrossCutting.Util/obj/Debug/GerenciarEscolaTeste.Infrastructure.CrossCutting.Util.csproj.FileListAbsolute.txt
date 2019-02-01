@@ -1,5 +1,0 @@
-D:\Projetos\Projetos para Testes\GerenciarEscolaTeste\GerenciarEscolaTeste.Infrastructure.CrossCutting.Util\bin\Debug\GerenciarEscolaTeste.Infrastructure.CrossCutting.Util.dll
-D:\Projetos\Projetos para Testes\GerenciarEscolaTeste\GerenciarEscolaTeste.Infrastructure.CrossCutting.Util\bin\Debug\GerenciarEscolaTeste.Infrastructure.CrossCutting.Util.pdb
-D:\Projetos\Projetos para Testes\GerenciarEscolaTeste\GerenciarEscolaTeste.Infrastructure.CrossCutting.Util\obj\Debug\GerenciarEscolaTeste.Infrastructure.CrossCutting.Util.csproj.CoreCompileInputs.cache
-D:\Projetos\Projetos para Testes\GerenciarEscolaTeste\GerenciarEscolaTeste.Infrastructure.CrossCutting.Util\obj\Debug\GerenciarEscolaTeste.Infrastructure.CrossCutting.Util.dll
-D:\Projetos\Projetos para Testes\GerenciarEscolaTeste\GerenciarEscolaTeste.Infrastructure.CrossCutting.Util\obj\Debug\GerenciarEscolaTeste.Infrastructure.CrossCutting.Util.pdb
