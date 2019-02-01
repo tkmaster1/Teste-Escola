@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Presentation", "0 - Presentation", "{C1C8DAD0-6BE0-4699-979E-2DEB4A48FC43}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Application", "1 - Application", "{2528DC69-9734-4225-885E-B12C897694C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", "{07B8D97C-11F9-4406-A29E-06056F641E57}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infrastructure", "3 - Infrastructure", "{D23EBAA4-A70E-4B57-B5CB-E1F703856BB9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.1 - Data", "3.1 - Data", "{116F1F64-8FB3-4E16-BB76-914E7EF1BF3A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.2 - CrossCutting", "3.2 - CrossCutting", "{AA824A39-A5BE-493F-BF03-275F568A18DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciarEscolaTeste.MVC", "GerenciarEscolaTeste.MVC\GerenciarEscolaTeste.MVC.csproj", "{4AA1B97C-5D54-4F68-B5EB-2B5CB78C06BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciarEscolaTeste.Application", "GerenciarEscolaTeste.Application\GerenciarEscolaTeste.Application.csproj", "{D95F9B51-FE39-4326-A405-BD65D8A8276A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciarEscolaTeste.Domain", "GerenciarEscolaTeste.Domain\GerenciarEscolaTeste.Domain.csproj", "{6FD79024-68AB-4770-8A1F-1E3CD208EF36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciarEscolaTeste.Infrastructure.Data", "GerenciarEscolaTeste.Infrastructure.Data\GerenciarEscolaTeste.Infrastructure.Data.csproj", "{0E1E44F8-C2FE-44C7-82CD-7E3AA5008344}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciarEscolaTeste.Infrastructure.CrossCutting.IoC", "GerenciarEscolaTeste.Infrastructure.CrossCutting.IoC\GerenciarEscolaTeste.Infrastructure.CrossCutting.IoC.csproj", "{5BD9A4F3-EADE-4969-91AE-77DC6FB309A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4AA1B97C-5D54-4F68-B5EB-2B5CB78C06BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AA1B97C-5D54-4F68-B5EB-2B5CB78C06BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AA1B97C-5D54-4F68-B5EB-2B5CB78C06BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AA1B97C-5D54-4F68-B5EB-2B5CB78C06BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D95F9B51-FE39-4326-A405-BD65D8A8276A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D95F9B51-FE39-4326-A405-BD65D8A8276A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D95F9B51-FE39-4326-A405-BD65D8A8276A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D95F9B51-FE39-4326-A405-BD65D8A8276A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FD79024-68AB-4770-8A1F-1E3CD208EF36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FD79024-68AB-4770-8A1F-1E3CD208EF36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FD79024-68AB-4770-8A1F-1E3CD208EF36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FD79024-68AB-4770-8A1F-1E3CD208EF36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E1E44F8-C2FE-44C7-82CD-7E3AA5008344}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E1E44F8-C2FE-44C7-82CD-7E3AA5008344}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E1E44F8-C2FE-44C7-82CD-7E3AA5008344}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E1E44F8-C2FE-44C7-82CD-7E3AA5008344}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BD9A4F3-EADE-4969-91AE-77DC6FB309A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BD9A4F3-EADE-4969-91AE-77DC6FB309A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BD9A4F3-EADE-4969-91AE-77DC6FB309A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BD9A4F3-EADE-4969-91AE-77DC6FB309A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{116F1F64-8FB3-4E16-BB76-914E7EF1BF3A} = {D23EBAA4-A70E-4B57-B5CB-E1F703856BB9}
+		{AA824A39-A5BE-493F-BF03-275F568A18DF} = {D23EBAA4-A70E-4B57-B5CB-E1F703856BB9}
+		{4AA1B97C-5D54-4F68-B5EB-2B5CB78C06BF} = {C1C8DAD0-6BE0-4699-979E-2DEB4A48FC43}
+		{D95F9B51-FE39-4326-A405-BD65D8A8276A} = {2528DC69-9734-4225-885E-B12C897694C4}
+		{6FD79024-68AB-4770-8A1F-1E3CD208EF36} = {07B8D97C-11F9-4406-A29E-06056F641E57}
+		{0E1E44F8-C2FE-44C7-82CD-7E3AA5008344} = {116F1F64-8FB3-4E16-BB76-914E7EF1BF3A}
+		{5BD9A4F3-EADE-4969-91AE-77DC6FB309A8} = {AA824A39-A5BE-493F-BF03-275F568A18DF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {900896C9-182C-49CE-B6FC-72C7E13FB3DA}
+	EndGlobalSection
+EndGlobal

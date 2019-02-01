@@ -1,0 +1,68 @@
+﻿@model IEnumerable<GerenciarEscolaTeste.Application.ViewModels.PessoaViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>:: Listagem: Pessoas ::</h2>
+<div class="form-group">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="btn-toolbar pull-right">
+                <a class="btn btn-primary btn-sm inserir-TipoPessoa" href="@Url.Action("Create","Pessoa")">
+                    Incluir
+                </a>
+            </div>
+            <div class="clear"></div>
+            <hr class="divisaoBtnTop">
+        </div>
+    </div>
+</div>
+<div class="col-lg-12">
+    <div class="panel panel-primary">
+        <div class="form-group">
+            <table class="table">
+                <tr>
+                    <th>
+                        Nome
+                    </th>
+                    <th>
+                        CPF
+                    </th>
+                    <th>
+                        Data de Nascimento
+                    </th>
+                    <th>
+                        Tipo de Pessoa
+                    </th>
+                    <th class="w10 text-center">Ações</th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NomePessoa)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CpfFormatado)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DataNascimento)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TipoPessoa.Descricao)
+                        </td>
+                        <td class="w10 text-center">
+                            <a class="botaoDetalhar" href="@Url.Action("Details", "Pessoa", new {id = @item.PessoaId})"><span class="glyphicon glyphicon-zoom-in detalhar-Pessoa" data-toggle="tooltip" data-placement="top" title="Detalhar"></span></a>
+                            |
+                            <a class="botaoEditar" href="@Url.Action("Edit", "Pessoa", new {id = @item.PessoaId})"><span class="glyphicon glyphicon-edit editar-Pessoa" data-toggle="tooltip" data-placement="top" title="Editar"></span></a>
+                            |
+                            <a href="#" data-toggle="modal" data-target="#excluirPessoa" class="botaoExcluir"><span class="glyphicon glyphicon-trash excluirPessoa" data-id="@item.PessoaId" data-toggle="tooltip" data-placement="top" title="Excluir"></span></a>
+                        </td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+</div>

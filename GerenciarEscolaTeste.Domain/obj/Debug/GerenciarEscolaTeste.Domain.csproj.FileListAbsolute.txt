@@ -1,0 +1,5 @@
+D:\Projetos\Projetos para Testes\GerenciarEscolaTeste\GerenciarEscolaTeste.Domain\bin\Debug\GerenciarEscolaTeste.Domain.dll
+D:\Projetos\Projetos para Testes\GerenciarEscolaTeste\GerenciarEscolaTeste.Domain\bin\Debug\GerenciarEscolaTeste.Domain.pdb
+D:\Projetos\Projetos para Testes\GerenciarEscolaTeste\GerenciarEscolaTeste.Domain\obj\Debug\GerenciarEscolaTeste.Domain.csproj.CoreCompileInputs.cache
+D:\Projetos\Projetos para Testes\GerenciarEscolaTeste\GerenciarEscolaTeste.Domain\obj\Debug\GerenciarEscolaTeste.Domain.dll
+D:\Projetos\Projetos para Testes\GerenciarEscolaTeste\GerenciarEscolaTeste.Domain\obj\Debug\GerenciarEscolaTeste.Domain.pdb

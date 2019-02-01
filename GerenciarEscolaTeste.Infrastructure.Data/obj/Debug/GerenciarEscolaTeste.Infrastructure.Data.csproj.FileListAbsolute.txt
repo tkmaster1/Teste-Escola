@@ -1,0 +1,14 @@
+D:\Projetos\Projetos para Testes\GerenciarEscolaTeste\GerenciarEscolaTeste.Infrastructure.Data\bin\Debug\GerenciarEscolaTeste.Infrastructure.Data.dll.config
+D:\Projetos\Projetos para Testes\GerenciarEscolaTeste\GerenciarEscolaTeste.Infrastructure.Data\bin\Debug\GerenciarEscolaTeste.Infrastructure.Data.dll
+D:\Projetos\Projetos para Testes\GerenciarEscolaTeste\GerenciarEscolaTeste.Infrastructure.Data\bin\Debug\GerenciarEscolaTeste.Infrastructure.Data.pdb
+D:\Projetos\Projetos para Testes\GerenciarEscolaTeste\GerenciarEscolaTeste.Infrastructure.Data\bin\Debug\EntityFramework.dll
+D:\Projetos\Projetos para Testes\GerenciarEscolaTeste\GerenciarEscolaTeste.Infrastructure.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projetos\Projetos para Testes\GerenciarEscolaTeste\GerenciarEscolaTeste.Infrastructure.Data\bin\Debug\GerenciarEscolaTeste.Domain.dll
+D:\Projetos\Projetos para Testes\GerenciarEscolaTeste\GerenciarEscolaTeste.Infrastructure.Data\bin\Debug\GerenciarEscolaTeste.Domain.pdb
+D:\Projetos\Projetos para Testes\GerenciarEscolaTeste\GerenciarEscolaTeste.Infrastructure.Data\bin\Debug\EntityFramework.xml
+D:\Projetos\Projetos para Testes\GerenciarEscolaTeste\GerenciarEscolaTeste.Infrastructure.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projetos\Projetos para Testes\GerenciarEscolaTeste\GerenciarEscolaTeste.Infrastructure.Data\obj\Debug\GerenciarEscolaTeste.Infrastructure.Data.csprojAssemblyReference.cache
+D:\Projetos\Projetos para Testes\GerenciarEscolaTeste\GerenciarEscolaTeste.Infrastructure.Data\obj\Debug\GerenciarEscolaTeste.Infrastructure.Data.csproj.CoreCompileInputs.cache
+D:\Projetos\Projetos para Testes\GerenciarEscolaTeste\GerenciarEscolaTeste.Infrastructure.Data\obj\Debug\GerenciarEscolaTeste.Infrastructure.Data.csproj.CopyComplete
+D:\Projetos\Projetos para Testes\GerenciarEscolaTeste\GerenciarEscolaTeste.Infrastructure.Data\obj\Debug\GerenciarEscolaTeste.Infrastructure.Data.dll
+D:\Projetos\Projetos para Testes\GerenciarEscolaTeste\GerenciarEscolaTeste.Infrastructure.Data\obj\Debug\GerenciarEscolaTeste.Infrastructure.Data.pdb

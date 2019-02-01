@@ -1,0 +1,57 @@
+﻿@model IEnumerable<GerenciarEscolaTeste.Application.ViewModels.TurmaViewModel>
+
+<h2>:: Listagem: Turmas ::</h2>
+<div class="form-group">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="btn-toolbar pull-right">
+                <a class="btn btn-primary btn-sm inserir-Turma" href="@Url.Action("Create","Turma")">
+                    Incluir
+                </a>
+            </div>
+            <div class="clear"></div>
+            <hr class="divisaoBtnTop">
+        </div>
+    </div>
+</div>
+<div class="col-lg-12">
+    <div class="panel panel-primary">
+        <div class="form-group">
+            <table class="table">
+                <tr>
+                    <th class="w15 text-center">
+                        Cód.
+                    </th>
+                    <th>
+                        Professor
+                    </th>
+                    <th class="w15 text-center">
+                        Período
+                    </th>
+                    <th>
+                        Alunos
+                    </th>
+                </tr>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="w10 text-center">
+                            @Html.DisplayFor(model => item.NumTurma)
+                        </td>
+                        <td class="w12 text-center">
+                            @Html.DisplayFor(model => item.Periodo)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => item.DataTurma)
+                        </td>
+                        <td>
+                            @*@Html.DropDownListFor(modelItem => item.PessoaId,
+                                  new SelectList(item.PessoaSelectList, "PessoaId", "NomePessoa", item.PessoaId), 
+                                  "Selecione", new { @class = "form-control", @id = "pessoaId" })*@                           
+                        </td>                        
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+﻿@model GerenciarEscolaTeste.Application.ViewModels.PessoaViewModel
+
+@{
+    ViewBag.Title = "Detalhar";
+}
+
+<h2>:: Detalhe: Pessoa ::</h2>
+
+<div>
+    <div class="form-horizontal">
+        <hr />
+        <div class="form-group">
+            @Html.LabelFor(model => model.NomePessoa, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.NomePessoa, new { htmlAttributes = new { @class = "form-control", @disabled = "disabled" } })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.CPF, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.CpfFormatado, new { htmlAttributes = new { @class = "form-control", @disabled = "disabled" } })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.DataNascimento, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DataNascimento, new { htmlAttributes = new { @class = "form-control", @disabled = "disabled" } })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.TipoPessoaId, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.TipoPessoa.Descricao, new { htmlAttributes = new { @class = "form-control tipoPessoaId", @readonly = "readonly", title = "Tipo de Pessoa" } })
+            </div>
+        </div>
+    </div>
+</div>
+<!-- INICIO Barra de Acoes -->
+<div class="form-group mBottomZero">
+    <hr class="divisaoBtnBottom">
+    <div class="row rowButtom">
+        <div class="col-md-12">
+            <div class="btn-toolbar pull-right">
+                @Html.ActionLink("Cancelar", "Index", null, new { @class = "btn btn-default btn-sm" })
+                @Html.ActionLink("Editar", "Edit", new { id = Model.PessoaId }, new { @class = "btn btn-primary btn-sm" })
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FIM Barra de Acoes -->

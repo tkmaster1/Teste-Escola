@@ -1,0 +1,73 @@
+﻿@model GerenciarEscolaTeste.Application.ViewModels.PessoaViewModel
+
+@{
+    var hasError = ViewData.ModelState[string.Empty] != null && ViewData.ModelState[string.Empty].Errors.Any();
+    ViewBag.Title = "Incluir";
+}
+@Html.Hidden("ValidationMessage", @Html.ValidationMessage(string.Empty).ToString())
+@Html.Hidden("HasError", hasError)
+
+<h2>:: Cadastrar: Pessoa ::</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.NomePessoa, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.NomePessoa, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.NomePessoa, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CPF, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.CPF, htmlAttributes: new { @class = "form-control CpfFormatado", @id = "CPF", Name = "CPF", @maxlength = "14" })
+                @Html.ValidationMessageFor(m => m.CPF, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DataNascimento, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.DataNascimento, htmlAttributes: new { @class = "form-control DataNascimento", @id = "DataNascimento", Name = "DataNascimento" })
+                @Html.ValidationMessageFor(model => model.DataNascimento, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.TipoPessoaId, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.TipoPessoaId,
+                    Model.TipoPessoaSelectList as SelectList, "Selecione",
+                    new { @class = "form-control tipoPessoaId" })
+                @Html.ValidationMessageFor(model => model.TipoPessoaId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+    <!-- INICIO Barra de Acoes -->
+    <div class="form-group mBottomZero">
+        <hr class="divisaoBtnBottom">
+        <div class="row rowButtom">
+            <div class="col-md-12">
+                <div class="btn-toolbar pull-right">
+                    @Html.ActionLink("Cancelar", "Index", null, new { @class = "btn btn-default btn-sm" })
+                    <input type="submit" value="Salvar" class="btn btn-primary btn-sm SalvarPessoa" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIM Barra de Acoes -->
+    <script>
+        var formId = '#formManterPessoa';
+    </script>
+}
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval",
+    "~/Scripts/Entities/pessoaView.js")
+}
